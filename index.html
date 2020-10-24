@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <div id="buttons"></div>
-    <div id="messages"></div>
-</div>
+
+<header class="splash">
+	<div class="container">
+		<h1 class="game-name"> Kamień Papier Nożyce </h1>
+	</div>
+</header>	
+
+<section class="game"> 
+	<div class="container">
+		<div class="score">
+	    	<div class="player-score"> 
+	    		<h2> PLAYER </h2>
+	    		<p class="scorePlayer" id="scorePlayer"> </p>
+	    	</div>
+	    	<div class="computer-score"> 
+	    		<h2> COMPUTER</h2> 
+	    		<p class="scoreComputer" id="scoreComputer"> </p> 
+	    	</div>
+	    </div>
+	    <div class="selections" id="buttons">
+	    	<button class="hand rock" id="button-rock"> <img src="https://i.postimg.cc/vm50nx5s/kamien.png"> </button>
+			<button class="hand paper" id="button-paper"> <img src="https://i.postimg.cc/Znbs4YBh/papier.png"> </button>
+			<button class="hand scissors" id="button-scissors"> <img src="https://i.postimg.cc/MKXtDF1t/nozyce.png"> </button>
+	    </div>
+	</div>
+</section>
+
+<section class="messages">
+	<div class="container">
+	    <div class="message" id="messages"></div>
+	</div>
+</section>
+
 <script src="js/functions.js"></script>
 <script src="js/script.js"></script>
 </body>
