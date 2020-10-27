@@ -1,18 +1,11 @@
 
-var buttonRock;
-var buttonPaper;
-var buttonScissors;
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
-var argButtonName;
-var playerScore = 0;
-var computerScore = 0;
-
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
-
+let playerScore = 0;
+let computerScore = 0;
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -31,7 +24,6 @@ function getMoveName(argMoveId) {
     return 'kamień';
   }
 }
-
 
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
@@ -62,10 +54,10 @@ function displayResult(argPlayerMove, argComputerMove) {
     scoreComputer(computerScore);
     console.log(computerScore);
   }
-  printMessage(' &nbsp;&nbsp Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage(' &nbsp;&nbspZagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
-
+let computerMove, playerMove, randomNumber;
 playerMove = argButtonName;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
@@ -74,6 +66,7 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
 }
+
 
 buttonRock.addEventListener('click',function() {
 	buttonClicked('kamień') });
