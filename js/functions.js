@@ -9,15 +9,11 @@ function clearMessages(){
 }
 
 function scoreComputer(scoreComputer){
-	var p = document.createElement('p');
-	p.innerHTML=(scoreComputer);
-	document.getElementById('scoreComputer').appendChild(p);
+	document.getElementById('scoreComputer').innerHTML=scoreComputer;
 }
 
 function scorePlayer(scorePlayer){
-	var p = document.createElement('p');
-	p.innerHTML=(scorePlayer);
-	document.getElementById('scorePlayer').appendChild(p);
+document.getElementById('scorePlayer').innerHTML=scorePlayer;
 }
 
 function clearPlayer(){
