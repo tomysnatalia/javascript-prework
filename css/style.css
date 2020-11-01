@@ -103,4 +103,31 @@ h2 {
   font-family: 'Poppins', sans-serif;
   height: 30px;
 }
+
+/* Media */
+@media (max-width: 767px) {
+  .game-name {
+    font-size: 25px;
+  }
+  h2 {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .hand {
+    font-size: 10px;
+  }
+  .hand img {
+    width: 100px;
+    height: 100px;
+  }
+  .message {
+    font-size: 15px;
+  }
+  .computer-score p {
+    margin-left: 25px;
+  }
+  .player-score p {
+    margin-left: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
